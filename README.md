@@ -1,12 +1,14 @@
 # wsulib_photobooth
 Repository to support WSU Library Photobooth kiosk
 
+
 ## Installation
 
   * install [homebrew](https://brew.sh/) on Mac
     * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   * install [fswatch](https://github.com/emcrisostomo/fswatch)
     * `brew install fswatch`
+
 
 ## To Run
 
@@ -21,7 +23,15 @@ e.g.
 fswatch -0 /Users/amazing_username/Pictures/Photo\ Booth\ Library/Pictures | xargs -0 -n1 -I {} cp {$1} /Users/amazing_username/never/delete/me/photobooth_output
 ```
 
-**Note the forward slashes for escaping possible blank spaces in paths**
+*Note the forward slashes for escaping possible blank spaces in paths*
+
+Alternatively, run the included python script `photobooth_file_copier.py` with input and output folders as first and second arguments:
+
+```
+python photobooth_file_copier.py /Users/amazing_username/Pictures/Photo\ Booth\ Library/Pictures /Users/amazing_username/never/delete/me/photobooth_output
+```
+
+*Note the forward slashes required for escaping blank spaces, or enclose input or output folder in quotes*
 
 ## Notes
 
