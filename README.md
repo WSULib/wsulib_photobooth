@@ -21,7 +21,7 @@ e.g.
 fswatch -0 /Users/amazing_username/Pictures/Photo\ Booth\ Library/Pictures | xargs -0 -n1 -I {} cp {$1} /Users/amazing_username/never/delete/me/photobooth_output
 ```
 
-**Note the forward slashes for escaping possible blank spaces in paths**
+*Note the forward slashes for escaping possible blank spaces in paths*
 
 ## Notes
 
